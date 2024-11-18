@@ -1,0 +1,350 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: /* "Inter Tight" */ "League Spartan", sans-serif;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    align-items: center;
+    
+ }
+ /*
+nav {
+    position: relative;
+}
+.nav {
+    position: sticky;
+    top: 0;
+    bottom: 5px;
+} */
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.logo a{
+    color: rgb(212, 67, 67);
+    font-size: 3rem;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.right ul a {
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+}
+ .right a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(212, 67, 67);;
+    height: 2px;
+    width: 100%;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: 0.3s ease-out;
+    
+}
+.right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+    
+}
+.right a:hover{
+    color: rgb(212, 67, 67);
+}
+/*
+.logo a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2;
+    background-color: rgb(212, 67, 67);;
+    height: 2px;
+    width: 100%;
+    transform-origin: bottom left;
+    transform: scaleX(0);
+    transition: 0.3s ease-out;
+    
+}
+.logo a:hover::after
+{
+    
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    
+}
+ .logo a:focus::after ,
+.logo a:visited::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    
+} */ 
+.intscn {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 49rem;
+}
+.inth {
+    margin: 10rem 0 0 150px;
+    font-size: 2rem;
+}
+.intscn .intimg {
+    /* margin: 0 300px 300px 0; */
+    height: 750px;
+    
+    padding: 0px 150px 200px 0px;
+    /* width: 500px; */
+    
+   
+}
+.intscn .inth span {
+    color: rgb(212, 67, 67);;
+}
+.intscn .inth h1 {
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    font-size: 3.5rem;
+}
+ .hr-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color:  rgb(212, 67, 67);;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    padding: 13px 40px 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 18px;
+    transition: color .3s ease;
+ }
+.intscn .hr-btn:hover {
+    background-color: rgb(177, 53, 53);
+}
+.icons {
+    margin-top: 20px;
+}
+#i1, #i2, #i3, #i4 {
+    margin-right: 15px;
+    font-size: 24px;
+    border: 2.5px solid rgb(212, 67, 67);;
+    border-radius: 15px;
+}
+#abt-scn h5{
+    color: white;
+    font-size: 2rem;
+    margin: 0px 0px 10px 15px;
+
+}
+#abt-scn p {
+    color: white;
+    margin-left: 10px;
+}
+#abt-scn {
+   display: grid;
+   grid-template-columns: 20% 80%;
+   /* display: flex;
+   justify-content: space-around; */
+   
+}
+.abt-scn .abt-img {
+    display: inline-block;
+    
+}
+.abt-img img {
+    margin-left: 2rem;
+}
+.abt-cnt h4 {
+    font-size: 25px;
+    margin: 0px 0px 10px 3px;
+}
+.abt-cnt h6 {
+    font-size: 20px;
+    color: gray;
+    font-weight: 500;
+    margin: 0px 0px 12px 3px;
+}
+.abt-cnt .p-2 {
+    margin-bottom: 20px;
+}
+.abt-cnt a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.abt-cnt button {
+    background-color: rgb(212, 67, 67);;
+    /* width: 100px;
+    height: 25px; */
+    padding: 13px 35px 15px 35px;
+    border: none;
+    border-radius: 15px;
+}
+.getin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 130px;
+}
+.getin h6 {
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.getin h5 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
+.getin p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.cnt-left ,.cnt-right{
+    color: white;
+    padding-top: 50px;
+    
+   
+}
+.form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* grid-template-columns: 60% 40%; */
+    border: 3px solid white;
+    margin: 70px;
+    align-items: center;
+}
+.cnt-left {
+    /* margin: 50px 0px 0px 20px; */
+    border: 1px solid white;
+    border-top: 1px solid transparent;
+    padding: 30px 45px;
+    position: relative;
+
+}
+.cnt-left h5 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.cnt-left label {
+    position: absolute;
+    font-size: 17px;
+    
+}
+.cnt-left input {
+    opacity: 0.5;
+    width: 600px;
+    height: 45px;
+   /*  padding-bottom: 20px; */
+}
+.cnt-left input {
+    margin-bottom: 20px;
+}
+#l1 {
+    top: 102px;
+    left: 310px;
+}
+#l2 {
+    top: 166px;
+    left: 310px;
+}
+#l3 {
+    top: 235px;
+    left: 310px;
+}
+.cnt-left textarea {
+    width: 600px;
+    height: 110px;
+    opacity: 0.5;   
+}
+.cnt-btn {
+    padding: 20px 255px 20px 250px;
+    background-color: rgb(212, 67, 67);;
+    border: none;
+    border-radius: 11px;
+    margin-top: 10px;
+}
+
+.cnt-btn a {
+    text-decoration: none;
+    color: white;
+}
+.cnt-right {
+    padding-bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding-right:190px;
+}
+.pl {
+    padding-right: 60px;
+    
+    padding-bottom: 20px;
+}
+#pl {
+    padding-right: 140px;
+
+}
+.pl, .p2, .p3 {
+    font-size: 23px;
+}
+#abt-h {
+    margin-left: 45px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+#dt {
+    color: white;
+    /* text-transform: lowercase; */
+    cursor: pointer;
+ }
+ .details {
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+    padding: 20px 0px  20px 90px;
+ }
+ #dti, #dti2,#dti3 {
+    color: rgb(212, 67, 67);;
+    padding-right: 8px;
+ }
+
+
+
+
+
+    
+
+
+
+
